@@ -1,0 +1,4 @@
+@openzeppelin/=node_modules/@openzeppelin/
+@uniswap/=node_modules/@uniswap/
+hardhat/=node_modules/hardhat/
+forge-std=lib/forge-std/src
