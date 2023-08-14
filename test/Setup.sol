@@ -38,6 +38,7 @@ contract Setup is SectorTest {
 		string name;
 		address token0;
 		address token1;
+		string type;
 		string x_chain;
 	}
 
