@@ -34,6 +34,7 @@ contract Setup is SectorTest {
 	IERC20 token1;
 
 	struct MMConfig {
+		string baseToken;
 		string name;
 		address token0;
 		address token1;

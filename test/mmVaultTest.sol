@@ -24,5 +24,7 @@ contract mmVaultTest is Setup {
 		vm.stopPrank();
 
 		assertEq(mmVault.balanceOf(dao), mintAmount);
+
+		// arrakisFactory.vaults(0, 15);
 	}
 }
