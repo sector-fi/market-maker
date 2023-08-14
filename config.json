@@ -4,7 +4,7 @@
     "name": "Y2K-ARB",
     "token0": "0x912CE59144191C1204E64559FE8253a0e49E6548",
     "token1": "0x65c936f008BC34fE819bce9Fa5afD9dc2d49977f",
-    "type": "Arrakis",
+    "v_type": "Arrakis",
     "x_chain": "ARBITRUM"
   }
 }
