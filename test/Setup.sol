@@ -36,6 +36,7 @@ contract Setup is SectorTest {
 	struct MMConfig {
 		string baseToken;
 		string name;
+		string symbol;
 		address token0;
 		address token1;
 		string v_type;
