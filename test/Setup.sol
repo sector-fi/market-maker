@@ -25,7 +25,7 @@ contract Setup is SectorTest {
 
 	IArrakisV2 mmVault;
 
-	string pairName = "Y2K_ARB";
+	string pairName = "ArrakisMM_Y2K-ARB_arbitrum";
 
 	address manager = address(101);
 	address dao = user1;
@@ -34,7 +34,8 @@ contract Setup is SectorTest {
 	IERC20 token1;
 
 	struct MMConfig {
-		string baseToken;
+		address baseToken;
+		uint24 feeTier;
 		string name;
 		string symbol;
 		address token0;
@@ -73,7 +74,7 @@ contract Setup is SectorTest {
 		address[] memory routers = new address[](1);
 		routers[0] = address(uniV3Router);
 		uint24[] memory feeTiers = new uint24[](1);
-		feeTiers[0] = 10000; // 1% fee
+		feeTiers[0] = config.feeTier;
 
 		// ensure correct sort order:
 		if (config.token0 > config.token1)

@@ -1,6 +1,7 @@
 {
   "ArrakisMM_Y2K-ARB_arbitrum": {
     "baseToken": "0x65c936f008BC34fE819bce9Fa5afD9dc2d49977f",
+    "feeTier": 10000,
     "name": "ArrakisMM_Y2K-ARB_arbitrum",
     "symbol": "Y2K-ARB",
     "token0": "0x912CE59144191C1204E64559FE8253a0e49E6548",
