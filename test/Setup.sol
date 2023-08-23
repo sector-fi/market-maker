@@ -35,6 +35,8 @@ contract Setup is SectorTest {
 
 	struct MMConfig {
 		address baseToken;
+		uint256 dec0;
+		uint256 dec1;
 		uint24 feeTier;
 		string name;
 		string symbol;
