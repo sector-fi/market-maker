@@ -2,10 +2,11 @@
 pragma solidity >=0.8.0;
 
 import "@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol";
+import { IMulticall } from "./IMulticall.sol";
 
 /// @title Router token swapping functionality
 /// @notice Functions for swapping tokens via Uniswap V3
-interface ISwapRouter is IUniswapV3SwapCallback {
+interface ISwapRouter is IUniswapV3SwapCallback, IMulticall {
 	struct ExactInputSingleParams {
 		address tokenIn;
 		address tokenOut;
